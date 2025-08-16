@@ -13,15 +13,27 @@
 body {
   font-family: Arial, sans-serif;
   color : white;
-  background-image: url('https://images.unsplash.com/photo-1500463959177-e0869687df26?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8M3w4NzI0NTY3fHxlbnwwfHx8fHw%3D');
   background-size: cover;
-  background-attachment: fixed;
+  animation: bgChange 20s infinite ease-in-out;
 }
 
 .example {
   display: block; 
   text-align: left;
   margin-left: 0; 
+}
+
+@keyframes bgChange{
+ 0% { background-image: url("https://images.unsplash.com/photo-1500463959177-e0869687df26?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8M3w4NzI0NTY3fHxlbnwwfHx8fHw%3D"); opacity:1; }
+20% { opacity:0.7; }
+25% { background-image: url("https://wallpaper-house.com/data/out/7/wallpaper2you_207004.jpg"); opacity:1; }
+45% { opacity:0.7; }
+50% { background-image: url("https://wallup.net/wp-content/uploads/2018/10/05/224808-national-geographic-nature-animal-forest-color-tree-hdr-ultrahd-black-white-hd-4k-wallpaper.jpg"); opacity:1; }
+70% { opacity:0.7; }
+75% { background-image: url("https://wallpaper.forfun.com/fetch/2a/2a0e2269fb8ded283617e63dfa30c350.jpeg"); opacity:1; }
+95% { opacity:0.7; }
+100% { background-image: url("https://us.images.westend61.de/0001991421pw/large-bull-elephant-south-africa-africa-RHPLF35557.jpg"); opacity:1; }
+}
 }
 
 </style>
@@ -85,4 +97,3 @@ Animals are multicellular, eukaryotic organisms that form a diverse kingdom of l
 
 </body>
 </html>
-
